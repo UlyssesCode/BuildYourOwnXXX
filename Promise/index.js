@@ -63,7 +63,7 @@ function fakeApiBackend() {
   } else {
     const error = {
       statusCode: 404,
-      message: "Could not find user",
+      message: "无法找到用户",
       error: "Not Found",
     };
 
@@ -71,7 +71,7 @@ function fakeApiBackend() {
   }
 }
 
-// 一个模拟的AJAX调用，延迟为一秒了来模拟网络延迟
+// 一个模拟的AJAX调用，延迟为一秒来模拟网络延迟
 const makeApiCall = () => {
   return new OwnPromise((resolve, reject) => {
     setTimeout(() => {
